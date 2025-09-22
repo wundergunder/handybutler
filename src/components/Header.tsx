@@ -90,9 +90,16 @@ export default function Header({ onGetQuote }: HeaderProps) {
 
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-4">
+          <button 
+            onClick={onGetQuote}
+            className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            Book Appointment
+          </button>
+        </div>
 
         {/* Mobile Menu Button */}
-            className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
+        <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden p-2 text-gray-900"
         >
