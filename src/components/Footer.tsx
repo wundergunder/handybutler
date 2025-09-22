@@ -14,10 +14,9 @@ const footerLinks = {
     { name: 'Careers', href: '#' }
   ],
   contact: [
-    '(555) 123-4567',
     'info@handybutler.com',
     'Mon-Fri: 7AM-7PM',
-    'Emergency Service Available'
+    'Professional Service Available'
   ]
 };
 
