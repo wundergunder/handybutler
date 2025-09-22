@@ -90,16 +90,9 @@ export default function Header({ onGetQuote }: HeaderProps) {
 
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <button 
-            onClick={onGetQuote}
-            className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            Book Appointment
-          </button>
-        </div>
 
         {/* Mobile Menu Button */}
-        <button 
+            className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden p-2 text-gray-900"
         >
@@ -128,13 +121,6 @@ export default function Header({ onGetQuote }: HeaderProps) {
               >
                 Reviews
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="block w-full text-left text-gray-900 font-medium py-2"
-              >
-                Contact
-              </button>
-              <div className="pt-4 border-t border-gray-200 space-y-3">
                 <button 
                   onClick={onGetQuote}
                   className="w-full bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold"

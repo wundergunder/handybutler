@@ -1,5 +1,4 @@
 import React from 'react';
-import { Phone } from 'lucide-react';
 interface HeroProps {
   onGetQuote: () => void;
 }
@@ -61,13 +60,6 @@ export default function Hero({ onGetQuote }: HeroProps) {
             >
               Get Free Estimate
             </button>
-            <a 
-              href="tel:(555) 123-4567"
-              className="bg-orange-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-600 hover:-translate-y-1 transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center justify-center gap-2"
-            >
-              <Phone size={20} />
-              Call Now
-            </a>
           </div>
         </div>
       </div>

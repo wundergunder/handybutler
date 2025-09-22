@@ -1,12 +1,7 @@
 import React from 'react';
-import { Mail, MapPin, Clock } from 'lucide-react';
+import { MapPin, Clock } from 'lucide-react';
 
 const contactMethods = [
-  {
-    icon: Mail,
-    title: 'Email',
-    content: 'info@handybutler.com'
-  },
   {
     icon: MapPin,
     title: 'Service Area',
