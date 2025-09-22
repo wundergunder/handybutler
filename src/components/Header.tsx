@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface HeaderProps {
   onGetQuote: () => void;
@@ -90,18 +90,11 @@ export default function Header({ onGetQuote }: HeaderProps) {
 
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <a 
-            href="tel:(555) 123-4567"
-            className="flex items-center gap-2 text-blue-900 font-semibold hover:text-orange-500 transition-colors"
-          >
-            <Phone size={18} />
-            (555) 123-4567
-          </a>
           <button 
             onClick={onGetQuote}
-            className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            Get Free Quote
+            Book Appointment
           </button>
         </div>
 
@@ -142,18 +135,11 @@ export default function Header({ onGetQuote }: HeaderProps) {
                 Contact
               </button>
               <div className="pt-4 border-t border-gray-200 space-y-3">
-                <a 
-                  href="tel:(555) 123-4567"
-                  className="flex items-center gap-2 text-blue-900 font-semibold"
-                >
-                  <Phone size={18} />
-                  (555) 123-4567
-                </a>
                 <button 
                   onClick={onGetQuote}
                   className="w-full bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold"
                 >
-                  Get Free Quote
+                  Book Appointment
                 </button>
               </div>
             </div>
