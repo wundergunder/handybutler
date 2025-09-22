@@ -135,7 +135,6 @@ export default function Header({ onGetQuote }: HeaderProps) {
                   Book Appointment
                 </button>
               </div>
-            </div>
           </div>
         )}
       </nav>
