@@ -1,9 +1,6 @@
 import React from 'react';
-interface HeroProps {
-  onChatWithUs: () => void;
-}
 
-export default function Hero({ onChatWithUs }: HeroProps) {
+export default function Hero() {
   return (
     <section className="relative h-screen flex items-center overflow-hidden">
       {/* Background Image */}
@@ -54,12 +51,12 @@ export default function Hero({ onChatWithUs }: HeroProps) {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <button 
-              onClick={onChatWithUs}
-              className="bg-blue-900 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 hover:-translate-y-1 transition-all duration-300 shadow-xl hover:shadow-2xl"
+            <div 
+              className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg text-lg font-semibold border-2 border-white/30"
+              style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}
             >
-              Chat with Us Now
-            </button>
+              💬 Click the chat icon in the bottom right to get started!
+            </div>
           </div>
         </div>
       </div>

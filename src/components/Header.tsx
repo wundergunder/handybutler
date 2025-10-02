@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-interface HeaderProps {
-  onChatWithUs: () => void;
-}
-
-export default function Header({ onChatWithUs }: HeaderProps) {
-  const [isScrolled, setIsScrolled] = useState(false);
+export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -90,12 +85,9 @@ export default function Header({ onChatWithUs }: HeaderProps) {
 
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <button 
-            onClick={onChatWithUs}
-            className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            Chat with Us
-          </button>
+          <div className="text-blue-900 font-semibold text-sm">
+            💬 Chat with us using the widget →
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -128,12 +120,9 @@ export default function Header({ onChatWithUs }: HeaderProps) {
               >
                 Reviews
               </button>
-                <button 
-                  onClick={onChatWithUs}
-                  className="w-full bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold"
-                >
-                  Chat with Us
-                </button>
+              <div className="text-blue-900 font-semibold text-sm py-2">
+                💬 Use chat widget in bottom right corner
+              </div>
               </div>
           </div>
         )}

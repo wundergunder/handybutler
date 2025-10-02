@@ -11,22 +11,16 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const handleChatWithUs = () => {
-    // The chatbot widget will handle the interaction
-    // We can add any additional logic here if needed
-    console.log('Chat widget should be available in bottom right corner');
-  };
-
   return (
     <div className="min-h-screen">
-      <Header onChatWithUs={handleChatWithUs} />
-      <Hero onChatWithUs={handleChatWithUs} />
+      <Header />
+      <Hero />
       <TrustIndicators />
       <Services />
       <About />
       <Testimonials />
       <ServiceAreas />
-      <CTA onChatWithUs={handleChatWithUs} />
+      <CTA />
       <Contact />
       <Footer />
     </div>
