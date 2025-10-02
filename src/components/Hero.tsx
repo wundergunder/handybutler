@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     <section className="relative h-screen flex items-center overflow-hidden">
       {/* Background Image */}
