@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -120,10 +121,16 @@ export default function Header() {
               >
                 Reviews
               </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="block w-full text-left text-gray-900 font-medium py-2"
+              >
+                Contact
+              </button>
               <div className="text-blue-900 font-semibold text-sm py-2">
                 💬 Use chat widget in bottom right corner
               </div>
-              </div>
+            </div>
           </div>
         )}
       </nav>
