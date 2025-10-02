@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 interface HeaderProps {
-  onGetQuote: () => void;
+  onChatWithUs: () => void;
 }
 
-export default function Header({ onGetQuote }: HeaderProps) {
+export default function Header({ onChatWithUs }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -91,10 +91,10 @@ export default function Header({ onGetQuote }: HeaderProps) {
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-4">
           <button 
-            onClick={onGetQuote}
+            onClick={onChatWithUs}
             className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            Book Appointment
+            Chat with Us
           </button>
         </div>
 
@@ -129,10 +129,10 @@ export default function Header({ onGetQuote }: HeaderProps) {
                 Reviews
               </button>
                 <button 
-                  onClick={onGetQuote}
+                  onClick={onChatWithUs}
                   className="w-full bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold"
                 >
-                  Book Appointment
+                  Chat with Us
                 </button>
               </div>
           </div>

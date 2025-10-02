@@ -1,9 +1,9 @@
 import React from 'react';
 interface HeroProps {
-  onGetQuote: () => void;
+  onChatWithUs: () => void;
 }
 
-export default function Hero({ onGetQuote }: HeroProps) {
+export default function Hero({ onChatWithUs }: HeroProps) {
   return (
     <section className="relative h-screen flex items-center overflow-hidden">
       {/* Background Image */}
@@ -55,10 +55,10 @@ export default function Hero({ onGetQuote }: HeroProps) {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <button 
-              onClick={onGetQuote}
+              onClick={onChatWithUs}
               className="bg-blue-900 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 hover:-translate-y-1 transition-all duration-300 shadow-xl hover:shadow-2xl"
             >
-              Get Free Estimate
+              Chat with Us Now
             </button>
           </div>
         </div>

@@ -9,25 +9,26 @@ import ServiceAreas from './components/ServiceAreas';
 import CTA from './components/CTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import QuoteModal from './components/QuoteModal';
-import { useModal } from './hooks/useModal';
 
 function App() {
-  const { isOpen: isQuoteModalOpen, openModal: openQuoteModal, closeModal: closeQuoteModal } = useModal();
+  const handleChatWithUs = () => {
+    // The chatbot widget will handle the interaction
+    // We can add any additional logic here if needed
+    console.log('Chat widget should be available in bottom right corner');
+  };
 
   return (
     <div className="min-h-screen">
-      <Header onGetQuote={openQuoteModal} />
-      <Hero onGetQuote={openQuoteModal} />
+      <Header onChatWithUs={handleChatWithUs} />
+      <Hero onChatWithUs={handleChatWithUs} />
       <TrustIndicators />
       <Services />
       <About />
       <Testimonials />
       <ServiceAreas />
-      <CTA onGetQuote={openQuoteModal} />
+      <CTA onChatWithUs={handleChatWithUs} />
       <Contact />
       <Footer />
-      <QuoteModal isOpen={isQuoteModalOpen} onClose={closeQuoteModal} />
     </div>
   );
 }
