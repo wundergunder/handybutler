@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CTA() {
+export default function CallToAction() {
   return (
     <section className="py-24 bg-gradient-to-br from-blue-900 to-blue-700 text-white text-center">
       <div className="max-w-4xl mx-auto px-6">
